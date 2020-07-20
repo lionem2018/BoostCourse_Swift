@@ -1,0 +1,31 @@
+/* Any, AnyObject, nil */
+
+import Swift
+
+/*
+ Any - Swift의 모든 타입을 지칭하는 키워드
+ AnyObject - 모든 클래스 타입을 지칭하는 프로토콜
+ nil - 없음을 의미하는 키워드, 다른 언어의 null 등과 유사*/
+
+// MARK: - Any
+var someAny: Any = 100
+someAny = "어떤 타입도 수용 가능합니다"
+someAny = 123.12
+
+// let someDouble: double = someAny
+
+
+// MARK: - AnyObject
+class SomeClass {}
+
+var someAnyObject: AnyObject = SomeClass()
+
+//someAnyObject = 123.12
+
+
+// MARK: - nil
+
+//someAny = nil
+//someAnyIbject = nil
+// someAny는 Any타입이고, someAnyObject는 AnyObect 타입이기 때문에 nil을 할당할 수 없음
+

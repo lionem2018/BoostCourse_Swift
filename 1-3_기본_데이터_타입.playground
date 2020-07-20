@@ -1,0 +1,38 @@
+/* 기본 데이터 타입 */
+
+import UIKit
+
+// Swift의 기본 데이터 타입
+// Bool, Int, UInt, Float, Double, Character, String
+
+// Bool: true와 false만을 값으로 가지는 타입
+var someBool: Bool = true
+someBool = false
+//someBool = 1 // error
+
+// Int: 정수 타입. 현재는 기본적으로 64비트 정수형
+var someInt: Int = -100
+//someInt = someBool  // error
+
+// UInt: 양의 정수 타입. 현재는 기본적으로 64비트 양의 정수형
+var someUInt: UInt = 100
+//someUInt = someInt // error
+
+// Float: 실수 타입. 32비트의 부동소수형
+var someFloat: Float = 3.14
+someFloat = 3
+
+// Double: 실수 타입. 64비트의 부동소수형
+var someDouble: Double = 3.14
+someDouble = 3
+//someDouble = someFlaot  // error
+
+// Character: 문자 타입. 유니코드 사용. 큰따옴표("") 사용.
+var someCharacter: Character = "하"
+print(someCharacter)
+
+// String: 문자열 타입. 유니코드 사용. 큰따옴표("") 사용.
+var someString : String = "하하하"
+someString = someString + " 웃으면 복이 와요"
+print(someString)
+//someString = someCharacter  // error
